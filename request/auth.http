@@ -1,0 +1,13 @@
+###register request
+Post http://localhost:3500/auth/register
+Content-Type: application/json
+
+{
+    "username" : "viro45osh",
+    "email" : "viroos@yahoo.com",
+    "mobile" : "09178920136",
+    "password" : "Ard40301376@",
+    "confirm_password" : "Ard40301376@"
+
+
+}
