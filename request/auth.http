@@ -3,11 +3,21 @@ Post http://localhost:3500/auth/register
 Content-Type: application/json
 
 {
-    "username" : "viro45osh",
-    "email" : "viroos@yahoo.com",
-    "mobile" : "09178920136",
+    "username" : "viro45aosh",
+    "email" : "virosos@yahoo.com",
+    "mobile" : "09188920136",
     "password" : "Ard40301376@",
     "confirm_password" : "Ard40301376@"
+}
 
+
+###login request 
+Post http://localhost:3500/auth/login
+Content-Type: application/json
+Authorization: Bearer {{$dotenv token}}
+
+{
+    "username" : "viro45aosh",
+    "password" : "Ard40301376@"
 
 }
