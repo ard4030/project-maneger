@@ -18,5 +18,5 @@ class TeamController {
 }
 
 module.exports = {
-    TeamController = new TeamController()
+    TeamController : new TeamController()
 }

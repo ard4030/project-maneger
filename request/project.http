@@ -1,0 +1,10 @@
+###Create Project
+Post http://localhost:3500/project/create
+Authorization: Bearer {{$dotenv token}} 
+Content-Type: application/json
+
+{
+    "title" : "divarnew",
+    "text" : "this Wen site is divar new"
+
+}
