@@ -8,7 +8,6 @@ const uploadFile = async(req , res , next) =>{
     const image_path =  path.join(createUploadPath() ,(Date.now() + path.extname(image.name)))
     req.body.image = image_path;
     let uploadPath = path.join(__dirname , ".." , ".." , image_path );
-    console.log(uploadPath)
     image.mv(uploadPath , (err) => {
         if(err) throw {status : 500 , message : "بارگزاری تصویر انجام نشد"}
         next(err)

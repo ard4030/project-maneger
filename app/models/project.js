@@ -1,3 +1,4 @@
+const { type } = require("express/lib/response");
 const mongoose = require("mongoose");
 const ProjectSchema = new mongoose.Schema({
     title : {type : String , required : true},
@@ -6,9 +7,7 @@ const ProjectSchema = new mongoose.Schema({
     owner : {type : mongoose.Types.ObjectId , required : true},
     team : {type : mongoose.Types.ObjectId },
     Private : {type : Boolean , default : true},
-
-
-
+    tags : {type : [String] , default : []}
 },{
     timestamps : true
 })
